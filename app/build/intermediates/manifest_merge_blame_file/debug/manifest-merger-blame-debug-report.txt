@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.testeunitrio"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.testeunitrio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.testeunitrio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:5:5-13:32
+18        android:allowBackup="true"
+18-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.10.0-beta01] /Users/marcelo.cmendes/.gradle/caches/transforms-3/83e940bb6563ac30f76b10e913d7e9e5/transformed/core-1.10.0-beta01/AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:10:9-41
+26        android:supportsRtl="true"
+26-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:11:9-35
+27        android:theme="@style/Theme.TesteUnitário" >
+27-->/Users/marcelo.cmendes/AndroidStudioProjects/TesteUnitrio/app/src/main/AndroidManifest.xml:12:9-51
+28        <provider
+28-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+29            android:name="androidx.startup.InitializationProvider"
+29-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+30            android:authorities="com.example.testeunitrio.androidx-startup"
+30-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+31            android:exported="false" >
+31-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+32            <meta-data
+32-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+33                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+33-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+34                android:value="androidx.startup" />
+34-->[androidx.emoji2:emoji2:1.2.0] /Users/marcelo.cmendes/.gradle/caches/transforms-3/45c3154222f956fe4b13f9980cbb8959/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+35            <meta-data
+35-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/marcelo.cmendes/.gradle/caches/transforms-3/f0388dda555c5631ff1472049b46982f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+36                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+36-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/marcelo.cmendes/.gradle/caches/transforms-3/f0388dda555c5631ff1472049b46982f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+37                android:value="androidx.startup" />
+37-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/marcelo.cmendes/.gradle/caches/transforms-3/f0388dda555c5631ff1472049b46982f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+38        </provider>
+39    </application>
+40
+41</manifest>
