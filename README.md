@@ -212,3 +212,55 @@ class TemperatureConverterTest {
     }
 }
 ```
+
+## Questão 5
+Para testar, fiz dois tipos de testes, sendo um conjunto com números primos e o "caminho não feliz" com números que não são primos.
+
+. Classe: CalculateNumberTypes
+
+```
+package com.example.testeunitrio
+
+class CalculateNumberTypes {
+    fun isCousinNumber(number: Int): Boolean {
+        if(number <= 1) return false
+
+        if (number % 2 == 0 && number != 2) {
+            return false
+        }
+
+        return true
+    }
+}
+```
+
+. Test: CalculateNumberTypesTest
+```
+package com.example.testeunitrio
+
+import org.junit.Assert
+import org.junit.Test
+
+class CalculateNumberTypesTest {
+    @Test
+    fun testSuccessCousinNumber() {
+        val number1 = 2
+        val number2 = 97
+
+        Assert.assertTrue(CalculateNumberTypes().isCousinNumber(number1))
+        Assert.assertTrue(CalculateNumberTypes().isCousinNumber(number2))
+    }
+
+    @Test
+    fun testFailureCousinNumber() {
+        val number1 = 76
+        val number2 = -76
+
+        Assert.assertFalse(CalculateNumberTypes().isCousinNumber(number1))
+        Assert.assertFalse(CalculateNumberTypes().isCousinNumber(number2))
+    }
+}
+```
+
+## Questão 6
+Para testar, fiz dois tipos de testes, sendo um conjunto com números primos e o "caminho não feliz" com números que não são primos.
