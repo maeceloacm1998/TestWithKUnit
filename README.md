@@ -263,4 +263,44 @@ class CalculateNumberTypesTest {
 ```
 
 ## Questão 6
-Para testar, fiz dois tipos de testes, sendo um conjunto com números primos e o "caminho não feliz" com números que não são primos.
+ Como forma de validar essa questao, utilizei 2 tipos de listas ordenadas, vizando números inteiros positivos e outra negativos e para casos de listas nã
+o ordenadas, números inteiros positivos e negativos.
+
+. Classe: OrdenationList
+
+```
+fun listaOrdenada(lista: List<Int>): Boolean {
+        if (lista.size < 2) {
+            return true
+        }
+        val crescente = lista.zipWithNext().all { (atual, proximo) -> atual <= proximo }
+        val decrescente = lista.zipWithNext().all { (atual, proximo) -> atual >= proximo }
+        return crescente || decrescente
+    }
+```
+
+. Test: OrdenationListTest
+```
+package com.example.testeunitrio
+
+import org.junit.Assert
+import org.junit.Test
+
+    @Test
+    fun testSuccessListaOrdenada() {
+        val list1: List<Int> = listOf(1,2,3,4,5)
+        val list2: List<Int> = listOf(-5,-4,-3,-2,-1)
+
+        Assert.assertTrue(OrdinationList().listaOrdenada(list1))
+        Assert.assertTrue(OrdinationList().listaOrdenada(list2))
+    }
+
+    @Test
+    fun testFailedListaOrdenada() {
+        val list1: List<Int> = listOf(2,4,3,2,1)
+        val list2: List<Int> = listOf(-1,-2,-3,-4,-5)
+
+        Assert.assertFalse(OrdinationList().listaOrdenada(list1))
+        Assert.assertFalse(OrdinationList().listaOrdenada(list2))
+    }
+```
